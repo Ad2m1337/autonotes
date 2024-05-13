@@ -102,6 +102,10 @@ body {
     border-right: none;
 }
 
+.table1 tr:nth-child(n+1) {
+    background-color: #d80d0d;
+}
+
 .button1 {
     color: white;
     padding: 15px;
@@ -124,13 +128,13 @@ body {
         transform: translateY(-100px);
     } 
     25% {
-        transform: translateY(35px);
+        transform: translateY(25px);
     }
     50% {
-        transform: translateY(25px);
+        transform: translateY(20px);
     }
     75% {
-        transform: translateY(25px);
+        transform: translateY(20px);
     }
     100% {
         transform: translateY(-100px);
@@ -145,7 +149,7 @@ body {
     margin-left: 45%;
     animation: notify_anim 1 5s;
     padding: 10px;
-    border: 1px solid rgb(7, 211, 7);
+    border: 2px solid rgb(0, 0, 0);
     width: 175px;
     text-align: center;
     border-radius: 10px;
