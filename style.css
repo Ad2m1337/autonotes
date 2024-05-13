@@ -102,3 +102,62 @@ body {
     border-right: none;
 }
 
+.button1 {
+    color: white;
+    padding: 15px;
+    margin: 10px auto;
+    margin-bottom: -20px;
+    border-radius: 15px;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid white;
+    transition-duration: 0.5s;
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+}
+
+@keyframes notify_anim {
+    0% {
+        transform: translateY(-100px);
+    } 
+    25% {
+        transform: translateY(35px);
+    }
+    50% {
+        transform: translateY(25px);
+    }
+    75% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+.anim {
+    position: absolute;
+    background-color: rgb(7, 211, 7);
+    color: black;
+    transform: translateY(-100px);
+    margin-left: 45%;
+    animation: notify_anim 1 5s;
+    padding: 10px;
+    border: 1px solid rgb(7, 211, 7);
+    width: 175px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.anim > div:first-child {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.anim > div:last-child {
+    font-size: 13px;
+    font-weight: normal;
+}
