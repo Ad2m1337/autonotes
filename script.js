@@ -63,28 +63,29 @@ button1.addEventListener("click", () => {
         var input_checked = inputarr.some(input => !input.value);
         
         if (!input_checked) {
+            notify_anim("success", "Dodano!");
+
             var table_row = document.createElement("tr");
 
-            addCell(`${inputarr[0].value} ${inputarr[1].value}`, table_row)
-            addCell(`${inputarr[2].value}`, table_row)
-            addCell(`${inputarr[3].value}`, table_row)
-            addCell(`${inputarr[4].value}`, table_row)
-            addCell(`${inputarr[5].value}`, table_row)
+            addCell(`${inputarr[0].value} ${inputarr[1].value}`, table_row);
+            addCell(`${inputarr[2].value}`, table_row);
+            addCell(`${inputarr[3].value}`, table_row);
+            addCell(`${inputarr[4].value}`, table_row);
+            addCell(`${inputarr[5].value}`, table_row);
 
 
             var spalanie = (inputarr[7].value / inputarr[6].value) * 100;  
             if(isNaN(spalanie)) {
-                spalanie = "-"
-                addCell(`-`, table_row)
-                alert("PUSTE POSLEK")
+                spalanie = "-";
+                addCell(`-`, table_row);
+                alert("PUSTE POSLEK");
             }
             else {
-                addCell(`${Math.round(spalanie)}L`, table_row)
+                addCell(`${Math.round(spalanie)}L`, table_row);
             }
              
-            table1.append(table_row)
-            table_row.addEventListener("click", removeelem)
-            notify_anim("success", "Dodano!")
+            table1.append(table_row);
+            table_row.addEventListener("click", removeelem);
         }
         else {
             inputs.forEach(input => {
