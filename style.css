@@ -143,6 +143,7 @@ body {
 }
 
 .anim {
+    user-select: none;
     position: absolute;
     background-color: rgb(7, 211, 7);
     color: black;
