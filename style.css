@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     margin: 10px;
     padding: 10px;
-    border: 1px solid white;
+    border: 3px solid white;
     border-radius: 10px;
 }
 
@@ -72,14 +72,14 @@ body {
     width: max-content;
     overflow: hidden;
     border-radius: 10px;
-    border: 1px solid white;
+    border: 3px solid white;
 }
 
 .table1 td,th {
     padding: 10px;
     margin: 0px;
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
 }
 
 .table1 th {
@@ -95,8 +95,8 @@ body {
 }
 
 .table1 tr:last-child > td {
-    border-bottom: 1px solid black;
-    border-right: 1px solid white;
+    border-bottom: 3px solid black;
+    border-right: 3px solid white;
 }
 
 .table1 tr > td:last-child, th:last-child {
@@ -115,7 +115,7 @@ body {
     border-radius: 15px;
     cursor: pointer;
     user-select: none;
-    border: 1px solid white;
+    border: 3px solid white;
     transition-duration: 0.5s;
 }
 
@@ -150,7 +150,7 @@ body {
     margin-left: 45%;
     animation: notify_anim 1 5s;
     padding: 10px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
     min-width: 175px;
     width: max-content;
     text-align: center;
