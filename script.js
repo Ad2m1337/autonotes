@@ -8,7 +8,8 @@ function notify_anim(status, text) {
     button1.disabled = true;
     if(status == "error") {
         var element = document.createElement("div");
-        element.style.backgroundColor = "red";
+        element.style.backgroundColor = "rgb(173, 0, 0)";
+        element.style.color = "white";
         element.setAttribute("class", "anim");
 
         element.innerHTML = `

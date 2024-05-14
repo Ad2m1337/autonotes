@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     width: 99.9vw;
     height: 99.9vh;
     overflow-x: hidden;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  "Montserrat", sans-serif;
     background-color: rgb(32, 32, 32);
 
 }
@@ -103,7 +104,7 @@ body {
 }
 
 .table1 tr:nth-child(n+1) {
-    background-color: #d80d0d;
+    background-color: rgb(173, 0, 0);
 }
 
 .button1 {
@@ -150,7 +151,8 @@ body {
     animation: notify_anim 1 5s;
     padding: 10px;
     border: 2px solid rgb(0, 0, 0);
-    width: 185px;
+    min-width: 175px;
+    width: max-content;
     text-align: center;
     border-radius: 10px;
 }
@@ -162,6 +164,14 @@ body {
 }
 
 .anim > div:last-child {
-    font-size: 15px;
-    font-weight: normal;
+    font-size: 14px;
+    font-weight:500;
+}
+
+.logo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin: 35px auto;
+    color: white;
+    font-size: 50px;
 }
