@@ -4,7 +4,7 @@ var topbar_div = document.querySelector(".topbar");
 var button1 = document.querySelector(".button1");
 var table1 = document.querySelector(".table1");
 
-async function notify_anim(status, text) {
+function notify_anim(status, text) {
     button1.disabled = true;
     if(status == "error") {
         var element = document.createElement("div");
@@ -32,7 +32,7 @@ async function notify_anim(status, text) {
         main_div.insertBefore(element, topbar_div);
     }
 
-    const animationPromise = new Promise((resolve) => {
+    var animationPromise = new Promise((resolve) => {
         setTimeout(() => {
             resolve();
         }, 4500);
